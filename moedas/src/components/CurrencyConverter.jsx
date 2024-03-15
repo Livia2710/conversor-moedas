@@ -65,11 +65,11 @@ const CurrencyConverter = () => {
     <div className="converter">
         <h2>Conversor de moedas</h2>
 
-        <input type="number" placeholder="Digite o valor..." value={amount} />
+        <input type="number" placeholder="Digite o valor..." value={amount} onChange={(e) => setAmount(e.target.value)} />
         <span>Selecione as moedas</span>
 
         {/* Dropdown para selecionar a moeda de origem */}
-        <select value={fromCurrency}>
+        <select value={fromCurrency} onChange={(e) => setFromCurrency(e.target.value)}>
             {Object.keys(rates).map((currency)=> (
                 <option key={currency} value={currency}>
                     {currency}
@@ -80,7 +80,7 @@ const CurrencyConverter = () => {
         <span>para</span>
 
         {/* Dropdown para selecionar a moeda de destino */}
-        <select value={toCurrency}>
+        <select value={toCurrency} onChange={(e) => setToCurrency(e.target.value)}>
             {Object.keys(rates).map((currency)=> (
                 <option key={currency} value={currency}>
                     {currency}
