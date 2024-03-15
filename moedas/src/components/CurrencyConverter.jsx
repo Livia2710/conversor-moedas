@@ -1,4 +1,4 @@
-import "./Currency.Converter.css";
+import "./CurrencyConverter.css";
 
 const CurrencyConverter = () => {
   return (
@@ -9,7 +9,7 @@ const CurrencyConverter = () => {
         <span>Selecione as moedas</span>
 
         <select>
-            <option value="BR">BRL</option>
+            <option value="BRL">BRL</option>
         </select>
 
         <span>para</span>
@@ -20,6 +20,8 @@ const CurrencyConverter = () => {
 
         <h3>BRL USD</h3>
         <p>20 BRL valem 5 USD</p>
+
+
 
     </div>
   )
